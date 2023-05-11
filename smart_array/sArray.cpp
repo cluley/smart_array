@@ -15,6 +15,6 @@ void smart_array::add_element(const int& var) {
 }
 
 int smart_array::get_element(const int& idx) {
-	if ((idx - 1) >= _length) throw std::length_error("segmentation fault (core dumped)");
+	if ((idx - 1) > i) throw std::length_error("segmentation fault (core dumped)");
 	return array[idx - 1];
 }
